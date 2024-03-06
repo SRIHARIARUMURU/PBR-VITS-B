@@ -33,9 +33,9 @@ const checkStatus = async (req, res) => {
   if (response.data.success === true) {
     
   
-    return res.redirect(`http://localhost:3000/success?userId=${merchantTransactionId}`);
+    return res.redirect(`http://pbr-vits.vercel.app/success?userId=${merchantTransactionId}`);
   } else {
-    return res.redirect(`http://localhost:3000/failure`);
+    return res.redirect(`http://pbr-vits.vercel.app/failure`);
   }
   }catch (error) {
       console.error('Error checking payment status:', error);
