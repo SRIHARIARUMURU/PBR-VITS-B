@@ -6,7 +6,7 @@ const axios = require('axios');
 const merchantId = 'PGTESTPAYUAT';
 const saltKey = '099eb0cd-02cf-4e2a-8aca-3e6c6aff0399';
 const saltIndex = '1';
-BASE_URI="http://localhost:3001"
+BASE_URI="https://pbr-vits-b.onrender.com"
 const initiatePayment = async (req, res) => {
   try {
     const transactionId = 'VIT' + req.body.rollNumber + uuidv4().slice(0, 4).toUpperCase();
